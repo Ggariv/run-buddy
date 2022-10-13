@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>Run Buddy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./assets/css/style.css" />
     <style>
         body{/* more on this crazy alphanumerical value in a minute! */ color: #39a6b2; font-family: Helvetica, Arial, sans-serif;}
@@ -13,12 +14,13 @@
             <style>
                 * {margin:0; padding:0}
                 /* apply styles to <header> */ 
-                header{padding: 20px 35px;background-color: #39a6b2; display: flex; justify-content: space-between; flex-wrap: wrap;}
-                header h1{font-weight: bold;font-size: 36px;color: #fce138; margin: 0;}
+                header{padding: 20px 35px;background-color: #39a6b2; display: flex; justify-content: space-between; flex-wrap: wrap; position: -webkit-sticky; position: sticky; top: 0; background-image: url("../run-buddy/assets/css/hero-bg.jpeg"); background-size: cover; background-position: center; background-attachment: fixed; background-position: 80%;}
+                header h1{font-weight: bold;font-size: 36px;color: #fce138; margin: 0; text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);}
                 header a{text-decoration: none; color:#fce138;}
                 header nav{margin: 7px 0;}
                 header nav ul {display:flex; flex-wrap: wrap; justify-content: space-between; align-items: center; list-style: none;}
-                header nav ul li a {margin:0 30px; font-weight: lighter;font-size: 1.55vw;}
+                header nav ul li a {padding:10px 15px; font-weight: lighter;font-size: 1.55vw; text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);}
+                header nav ul li a:hover {background: #fce138; color: #024e76; border-radius: 15px; text-shadow: none;}
             </style>
             <h1>
                 <a href="/">RUN BUDDY</a>
